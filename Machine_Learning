@@ -14,5 +14,31 @@ Conjunto de validação (Validation set): Ajuda a previnir o overfitting (sobrea
 Conjunto de teste (test set): Fornece uma estimativa precisa do desempenho do modelo em dados futuros ou desconhecidos, deve representar dados nunca vistos pelo modelo para fornecer uma avaliação honesta de sua capacidade de generalização, avalia o desempenho final.   
 
 3.	Explique como você lidaria com dados ausentes em um conjunto de dados de treinamento.
+
+Na questão estipulada, se a quantidade de dados ausentes for pequena ou estes não apresentarem uma grande relevância para o projeto removeriá-os, caso contrário substituiriá-os pela média, mediana ou moda da coluna, imputando os valores.
+Outra opção seria o uso do machine learning para prever e preencher esses valores, procurando o motivo, explorando razões subjacentes que possam ter ocasionado a alteração.
+
 4.	O que é uma matriz de confusão e como ela é usada para avaliar o desempenho de um modelo preditivo?
+
+Uma matriz de confusão é uma tabela usada para avaliar o desempenho de um modelo de classificação. Ela mostra a relação entre as previsões do modelo e os valores reais dos dados de teste. Aqui está uma explicação simplificada:
+|-------------|       Predito Positivo	     |       Predito Negativo     |
+|Real Positivo|    Verdadeiro Positivo (TP)  |     Falso Negativo (FN)    |
+|Real Negativo|	    Falso Positivo (FP)      |	Verdadeiro Negativo (TN)  |
+
+Componentes:
+
+Verdadeiro Positivo (TP): Casos em que o modelo previu corretamente a classe positiva.
+Verdadeiro Negativo (TN): Casos em que o modelo previu corretamente a classe negativa.
+Falso Positivo (FP): Casos em que o modelo previu incorretamente a classe positiva.
+Falso Negativo (FN): Casos em que o modelo previu incorretamente a classe negativa.
+
+Métricas Derivadas da Matriz de Confusão:
+
+Acurácia: (TP + TN) / (TP + TN + FP + FN)
+Precisão: TP / (TP + FP)
+Revocação (Recall): TP / (TP + FN)
+F1-Score: 2 * (Precisão * Recall) / (Precisão + Recall)
+
+Essas métricas ajudam a entender melhor o desempenho do modelo em diferentes aspectos, como a capacidade de identificar corretamente casos positivos e negativos.
+
 5.	Em quais áreas (tais como construção civil, agricultura, saúde, manufatura, entre outras) você acha mais interessante aplicar algoritmos de machine learning?
