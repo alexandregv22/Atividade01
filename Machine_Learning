@@ -1,0 +1,18 @@
+1.	Explique, com suas palavras, o que é machine learning?
+
+Machine Learning (ML) é uma subárea da Inteligência Artificial (IA) que permite que os sistemas aprendam e melhorem automaticamente com a experiência, sem ser explicitamente programados.
+Ela se baseia no desenvolvimento de algoritmos que podem identificar padrões em dados e fazer previsões ou tomar decisões com base nesse padrões.
+Os algoritmos podem ser:
+Supervisionados: Aprendem a partir de um conjunto de dados rotulados. Exemplos incluem regressão linear e árvores de decisão.
+Não Supervisionados: Procuram padrões em dados não rotulados. Exemplos incluem clustering e associação.
+Reforço: Aprendem a tomar ações em um ambiente para maximizar algum tipo de recompensa.
+
+2.	Explique o conceito de conjunto de treinamento, conjunto de validação e conjunto de teste em machine learning.
+
+Conjunto de treinamento (Training set): Modelo que aprende indentificando padrões e ajustando seus parâmetros com base nos dados, maior parte dos dados disponíveis.
+Conjunto de validação (Validation set): Ajuda a previnir o overfitting (sobreajuste), modelo se ajustando demais aos dados de treinamento, devendo esse ser avaliado durante a fase de desenvolvimento.
+Conjunto de teste (test set): Fornece uma estimativa precisa do desempenho do modelo em dados futuros ou desconhecidos, deve representar dados nunca vistos pelo modelo para fornecer uma avaliação honesta de sua capacidade de generalização, avalia o desempenho final.   
+
+3.	Explique como você lidaria com dados ausentes em um conjunto de dados de treinamento.
+4.	O que é uma matriz de confusão e como ela é usada para avaliar o desempenho de um modelo preditivo?
+5.	Em quais áreas (tais como construção civil, agricultura, saúde, manufatura, entre outras) você acha mais interessante aplicar algoritmos de machine learning?
